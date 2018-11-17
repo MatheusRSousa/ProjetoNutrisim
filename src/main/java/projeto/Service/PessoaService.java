@@ -69,7 +69,7 @@ public class PessoaService {
 
 	private void validacaoTelefone(Pessoa pessoa) throws Excessoes {
 		String telefone = String.valueOf(pessoa.getTelefone());
-		if (telefone.length() != 11) {
+		if (telefone.length() != 15) {
 			throw new Excessoes("Telefone inválido. Numero deve ter um DDD.");
 		}
 		if (repository.existsByTelefone(telefone) == true) 
