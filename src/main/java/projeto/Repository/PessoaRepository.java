@@ -8,7 +8,7 @@ import projeto.Domain.Pessoa;
 @Repository
 public interface PessoaRepository extends MongoRepository<Pessoa, String>{
 	
-	public long findByTelefone(long telefone);
-	public String findByEmail(String email);
-
+	public boolean existsByTelefone(String telefone);
+	public boolean existsByEmail(String email);
+	
 }

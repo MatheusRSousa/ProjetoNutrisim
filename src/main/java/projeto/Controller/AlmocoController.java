@@ -37,12 +37,7 @@ public class AlmocoController {
 		return new ResponseEntity<Almoco>(service.addAlmoco(almoco),HttpStatus.OK);
 	}
 	
-	/////@PutMapping("/pessoa") //ATUALIZA PESSOA
-	//public ResponseEntity<Pessoa> atualizaPessoa(@RequestBody Almoco almoco)
-	//{	service.(almoco);
-		//return new ResponseEntity<Pessoa>(service.atualizarPessoa(pessoa),HttpStatus.OK);
-	//}
-	
+
 	@DeleteMapping("/almoco/{id}")
 	public ResponseEntity<String> deletaAlmoco(@PathVariable String id)
 	{	service.deletaAlmoco(id);

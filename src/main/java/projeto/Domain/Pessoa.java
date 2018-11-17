@@ -7,7 +7,7 @@ public class Pessoa {
 	@Id
 	private String id;
 	private String nome;
-	private long telefone;
+	private String telefone;
 	private String email;
 	private long senha;
 	private int idade;
@@ -17,7 +17,7 @@ public class Pessoa {
 	public Pessoa() {
 	}
 
-	public Pessoa(String id, String nome, long telefone, String email, long senha, int idade, double altura,
+	public Pessoa(String id, String nome, String telefone, String email, long senha, int idade, double altura,
 			double peso) {
 		this.id = id;
 		this.nome = nome;
@@ -45,11 +45,11 @@ public class Pessoa {
 		this.nome = nome;
 	}
 
-	public long getTelefone() {
+	public String getTelefone() {
 		return telefone;
 	}
 
-	public void setTelefone(long telefone) {
+	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
 
