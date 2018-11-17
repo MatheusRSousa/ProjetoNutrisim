@@ -94,6 +94,18 @@ public class PessoaService {
 		return pessoa;
 	}
 
+	
+	public Pessoa login(String email, long senha) 
+	{	
+		if (repository.existsByEmail(email)) 
+		{  Pessoa pessoa = repository.findByEmail(email);
+		   if (senha ==  pessoa.getSenha()) 
+		   {
+			   
+		   }
+		
+		}
+	}
 	public void deletaPessoa(String id) {
 		if (repository.existsById(id)) {
 			repository.deleteById(id);
